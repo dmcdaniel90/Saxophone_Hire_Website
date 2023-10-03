@@ -1,0 +1,56 @@
+#faq {
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  .inner > h2 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .accordion {
+    position: relative;
+    box-shadow: 0px 1px 7px #dbdbdb;
+
+    .head {
+      color: #2c394b;
+      padding: 20px 30px;
+      border-top: 2px solid rgba(255, 255, 255, 0.6);
+      border-left: 2px solid rgba(255, 255, 255, 0.6);
+      border-right: 2px solid rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+      transition: 0.2s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .arrow {
+        color: #dbdbdb;
+        font-size: 60px;
+        transition: 0.25s ease;
+        opacity: 0.7;
+        transform: rotate(-90deg);
+      }
+
+      &:hover .arrow {
+        opacity: 1;
+      }
+
+      &:hover,
+      &.active {
+        background-color: #082032;
+      }
+    }
+
+    .arrow-animate {
+      transform: rotate(-180deg);
+      opacity: 1;
+    }
+
+    .content {
+      background-color: #ffffff;
+      display: none;
+      padding: 20px 30px;
+      color: #333333;
+    }
+  }
+}
