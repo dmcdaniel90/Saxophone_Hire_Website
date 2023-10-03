@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "compile": "sass --watch assets/sass/:assets/css",
-    "pretty": "prettier --write assets/ index.html",
+    "pretty": "prettier --write assets/ index.html gallery.html",
     "format": "npm run pretty && eslint --fix assets/ index.html",
     "dev": "live-server"
   },
