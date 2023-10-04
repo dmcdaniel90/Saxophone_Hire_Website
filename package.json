@@ -7,7 +7,8 @@
     "compile": "sass --watch assets/sass/:assets/css",
     "pretty": "prettier --write assets/ index.html gallery.html",
     "format": "npm run pretty && eslint --fix assets/ index.html",
-    "dev": "live-server"
+    "dev": "live-server",
+    "build": "sass assets/sass/:assets/css"
   },
   "repository": {
     "type": "git",
