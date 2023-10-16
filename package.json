@@ -2,12 +2,13 @@
   "name": "saxophone_hire_website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "private": true,
   "scripts": {
-    "compile": "sass --watch assets/sass/:assets/css",
-    "pretty": "prettier --write assets/ index.html gallery.html",
-    "format": "npm run pretty && eslint --fix assets/ index.html",
-    "dev": "live-server"
+    "compile": "sass --watch src/sass/:src/css",
+    "pretty": "prettier --write src/ dist/index.html gallery.html",
+    "format": "npm run pretty && eslint --fix src/ dist/index.html",
+    "dev": "live-server",
+    "build": "webpack --mode production && node-sass src/sass/main.scss dist/main.css"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,24 @@
   "bugs": {
     "url": "https://github.com/dmcdaniel90/Saxophone_Hire_Website/issues"
   },
-  "homepage": "https://github.com/dmcdaniel90/Saxophone_Hire_Website#readme",
+  "homepage": "https://github.com/dmcdaniel90/Saxophone_Hire_Website/",
   "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.3"
+    "file-loader": "^6.2.0",
+    "node-sass": "^9.0.0",
+    "prettier": "^3.0.3",
+    "sass-loader": "^13.3.2",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "tiny-slider": "^2.9.4"
   }
 }

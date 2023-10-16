@@ -1,0 +1,48 @@
+///
+/// Hyperspace by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* home */
+
+#home {
+  background-attachment: fixed;
+  background-color: rgba(30, 30, 100, 0.5);
+  background-image: url('./images/home.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: 100% 100%;
+  background-blend-mode: overlay;
+
+  p {
+    font-size: 1.25em;
+    color: white;
+    // background-color: rgba(30,30,100,0.5);
+    background-color: rgba(255, 76, 41, 0.5);
+    padding: 0.5em;
+    border-radius: 5px;
+
+    @include breakpoint('<=medium') {
+      br {
+        display: none;
+      }
+    }
+
+    @include breakpoint('<=small') {
+      font-size: 1em;
+    }
+  }
+
+  @include breakpoint('<=large') {
+    background-attachment: scroll;
+  }
+  @include breakpoint('<=medium') {
+    background-image: url(../images/clubsax1.jpg);
+    background-size: 100%;
+  }
+
+  @include breakpoint('<=small') {
+    background-position-y: 25%;
+  }
+}
