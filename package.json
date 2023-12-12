@@ -7,7 +7,7 @@
     "pretty": "prettier --write src/ dist/index.html gallery.html",
     "format": "npm run pretty && eslint --fix src/ dist/index.html",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "webpack --mode production"
   },
   "repository": {
