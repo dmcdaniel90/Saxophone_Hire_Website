@@ -1,6 +1,11 @@
+dist/
+.github/
+.vscode/
 .DS_Store 
 .eslintrc.json
 .prettierignore
 .prettierrc.json
 node_modules
-.vscode
+package-lock.json
+webpack.config.js
+.htaccess

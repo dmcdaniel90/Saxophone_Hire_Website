@@ -4,11 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "compile": "sass --watch src/sass/:src/css",
     "pretty": "prettier --write src/ dist/index.html gallery.html",
     "format": "npm run pretty && eslint --fix src/ dist/index.html",
     "dev": "live-server",
-    "build": "webpack --mode production && node-sass src/sass/main.scss dist/main.css"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,9 @@
   },
   "homepage": "https://github.com/dmcdaniel90/Saxophone_Hire_Website/",
   "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "babel-loader": "^9.1.3",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "eslint": "^8.51.0",
@@ -28,11 +30,14 @@
     "eslint-plugin-prettier": "^5.0.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^6.0.0",
-    "node-sass": "^9.0.0",
+    "html-webpack-plugin": "^5.5.4",
+    "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^3.0.3",
+    "resolve-url-loader": "^5.0.0",
     "sass-loader": "^13.3.2",
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },

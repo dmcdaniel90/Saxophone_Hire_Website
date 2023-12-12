@@ -4,12 +4,14 @@ import browser from './browser.min.js'
 import jQuery from './jquery.min.js'
 import jqueryScrollex from './jquery.scrollex.min.js'
 import jqueryScrolly from './jquery.scrolly.min.js'
-// import mediaGallery from '../media-gallery.js'
+//import mediaGallery from './media-gallery.js'
 import tinySlider from './tiny-slider.js'
 import util from './util.js'
-import mainStyles from '../sass/main.scss'
-import noScriptStyles from '../sass/noscript.scss'
-;(function () {
+import '../sass/main.scss'
+import '../sass/noscript.scss'
+import '../sass/tiny-slider.scss'
+
+(function () {
   var $window = $(window),
     $body = $('body'),
     $sidebar = $('#sidebar')

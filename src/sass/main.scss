@@ -1,12 +1,9 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
-// @import 'fontawesome.scss';
-@import 'brands.scss';
-@import 'solid.scss';
+@import 'libs/vars.scss';
+@import 'libs/functions.scss';
+@import 'libs/mixins.scss';
+@import 'libs/vendor.scss';
+@import 'libs/breakpoints.scss';
+@import 'libs/html-grid.scss';
 @import 'tiny-slider.scss';
 
 /*
@@ -93,11 +90,12 @@
 
 #home {
   background-attachment: fixed;
-  background-image: url('./images/home.jpg');
+  //background-image: url('~/src/images/home.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
 }
+
 #home p {
   font-size: 1.25em;
   color: white;
