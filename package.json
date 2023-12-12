@@ -6,7 +6,8 @@
   "scripts": {
     "pretty": "prettier --write src/ dist/index.html gallery.html",
     "format": "npm run pretty && eslint --fix src/ dist/index.html",
-    "dev": "live-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -18,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/dmcdaniel90/Saxophone_Hire_Website/issues"
   },
-  "homepage": "https://github.com/dmcdaniel90/Saxophone_Hire_Website/",
+  "homepage": "https://dmcdaniel90.github.io/Saxophone_Hire_Website/",
   "devDependencies": {
     "@babel/core": "^7.23.6",
     "@babel/preset-env": "^7.23.6",
